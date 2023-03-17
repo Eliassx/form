@@ -9,15 +9,19 @@ loginBtn.addEventListener("click", (e) => {
   e.preventDefault();
 
   
-if(passwordRegex.test(passwordInput.value) && emailRegex.test(emailInput.value)) {
-      alert("Logado");
-}
-else if(!emailRegex.test(emailInput.value)){
-        emailInput.style.border = "2px solid red";    
-} 
-else if (!passwordRegex.test(passwordInput.value)) {
+    if(passwordRegex.test(passwordInput.value) == true && emailRegex.test(emailInput.value) == true) {
+        alert("Logado");
+    }
+    else if(passwordRegex.test(passwordInput.value) == false && emailRegex.test(emailInput.value) == false) {
+        passwordInput.style.border = "2px solid red";
+        emailInput.style.border = "2px solid red";  
+    }
+    else if (passwordRegex.test(passwordInput.value) == false) {
         passwordInput.style.border = "2px solid red";
     }
+    else if(emailRegex.test(emailInput.value) == false){
+        emailInput.style.border = "2px solid red";    
+    } 
 
     console.log(emailRegex.test(emailInput.value));
     console.log(passwordRegex.test(passwordInput.value));
