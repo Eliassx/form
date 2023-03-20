@@ -62,9 +62,6 @@ body{
     align-items: center;
 
     padding-bottom: 24px;
-    margin: 0 11.125rem;
-
-    border-bottom: 2px solid rgba(0, 0, 0, 0.32);
 }
 #email{
     background-color: rgba(113, 128, 185, 0.32);
@@ -81,30 +78,54 @@ body{
     font-size: 14px;
     line-height: 17px;
 
-    margin: 24px 0;
+    margin: 24px 0 10px 0;
     border: 2px solid transparent;
 
     border-radius: 4px;
 }
-#password{
-    background-color: rgba(113, 128, 185, 0.32);
-    height: 48px;
-    width: 400px;
-
-    background-image: url(img/Lock.png);
-    background-repeat: no-repeat;
-    background-position: 10px;
-    padding-left: 52px;
+#msg-email{
+    /* border: 2px solid red; */
+    margin-right: 14rem;
+    margin-bottom: .7rem;
 
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 14px;
     line-height: 17px;
+    color: red;
 
-    margin-bottom: 24px;
-
+}
+#password{
+    background-color: rgba(113, 128, 185, 0.32);
+    height: 48px;
+    width: 400px;
+    
+    background-image: url(img/Lock.png);
+    background-repeat: no-repeat;
+    background-position: 10px;
+    padding-left: 52px;
+    
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    
+    margin: 0 0 15px 0;
+    
     border: 2px solid transparent;
     border-radius: 4px;
+}
+#msg-password{
+    /* border: 2px solid red; */
+
+    margin-right: 14rem;
+    margin-bottom: 0.7rem;
+
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: red;
 }
 .text-box button{
     background-color: #7180B9;
@@ -120,12 +141,15 @@ body{
     border-radius: 4px;
     cursor: pointer;
 }
+hr{
+    margin: 0 11.125rem;
+}
 .login-with{
     display: flex;
     justify-content: center;
     align-items: center;
 
-    margin-top: 44px;
+    margin-top: 37px;
 }
 .login-with button{
     background-color: #7180B9;
