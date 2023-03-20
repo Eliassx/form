@@ -24,11 +24,11 @@ loginBtn.addEventListener("click", (e) => {
     }
     else if (passwordRegex.test(passwordInput.value) == false) {
         passwordInput.style.border = "2px solid red";
-        document.getElementById('msg-password').innerHTML = `*Digite sua senha correta!`
+        document.getElementById('msg-password').innerHTML = `Email inválido`
     }
     else if(emailRegex.test(emailInput.value) == false){
         emailInput.style.border = "2px solid red";
-        document.getElementById('msg-email').innerHTML = `*Digite seu E-mail corretamente!`
+        document.getElementById('msg-email').innerHTML = `Email inválido`
     } 
 
     console.log(emailRegex.test(emailInput.value));

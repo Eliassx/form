@@ -180,3 +180,6 @@ hr{
 .login-with img{
     margin-right: 5.5px;
 }
+.login-with a{
+    text-decoration: none;
+}
